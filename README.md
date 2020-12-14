@@ -11,18 +11,18 @@ json文件格式
 ```
 some_item.json
 {
-	"<some_subitem>": {
-		"": <count>,
-		"certain_material": <count>,
-		...
-	},
+    "<some_subitem>": {
+        "": <count>,
+        "certain_material": <count>,
+        ...
+    },
 
-	"<another_subitem>": {
-		"certain_material": <count>,
-		...
-	},
+    "<another_subitem>": {
+        "certain_material": <count>,
+        ...
+    },
 
-	...
+    ...
 }
 ```
 
