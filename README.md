@@ -50,7 +50,7 @@ calc函数会递归地计算出所需原料，返回值为存储预算表的字�
 
 要添加合成表，可以手动编辑craft/下json文件，也可以调用
 ```python
-add(name, craft_dict)
+add(name, dict)
 ```
 
 dict为存储合成表的字典，和合成表json格式类似，尽量使用通配材质
