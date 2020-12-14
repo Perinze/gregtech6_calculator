@@ -1,0 +1,14 @@
+{
+    "machine_casing": {
+        "": 1
+    },
+    "plate": {
+        "stainless_steel": 4
+    },
+    "rod": {
+        "": 1
+    },
+    "rotor": {
+        "stainless_steel": 1
+    }
+}
