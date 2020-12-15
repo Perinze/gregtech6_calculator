@@ -10,8 +10,8 @@ def route():
 			req.append('')
 		res = calc(req[0], req[1], req[2])
 		ui.show(res)
-	elif act == 'add':
-		add(req)
+#	elif act == 'add':
+#		add(req)
 	elif act == 'q':
 		return False
 	else:
