@@ -19,17 +19,18 @@ def merge(da, db, cnt):
 				da[k] = db[k] * cnt
 		else:
 			if k in da.keys():
-				merge(da[k], db[k], cnt, rank + 1)
+				merge(da[k], db[k], cnt)
 			else:
 				dbc = db
 				mul(dbc, cnt)
 				da[k] = db[k]
 				
 				
-def calc(name, cnt, mat='', rank=0):
+def calc(name, cnt, mat=''):
 	with open("craft/{}.json".format(name), 'r') as f:
 		craft = json.loads(f.read())
 	f.close()
+	cnt = int(cnt)
 
 	if len(craft) == 0:
 		return {name: {mat: cnt}}
@@ -40,7 +41,7 @@ def calc(name, cnt, mat='', rank=0):
 			cover_material = material
 			if cover_material == '':
 				cover_material = mat
-			subres = calc(meta, craft[meta][material], cover_material, rank + 1)
+			subres = calc(meta, craft[meta][material], cover_material)
 			merge(res, subres, cnt)
 
 	return res
